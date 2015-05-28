@@ -10,6 +10,7 @@ import static org.hamcrest.CoreMatchers.*;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import com.thoughtworks.selenium.SeleneseTestBase;
@@ -18,14 +19,14 @@ import com.thoughtworks.selenium.SeleneseTestBase;
 
 
 public class SeleniumTest extends SeleneseTestBase {
-  private WebDriver driver;
+  private HtmlUnitDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
   private StringBuffer verificationErrors = new StringBuffer();
 
   @Before
   public void setUp() throws Exception {
-    driver = new FirefoxDriver();
+    driver = new HtmlUnitDriver();
     baseUrl = "http://itsd-consulting.de/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
