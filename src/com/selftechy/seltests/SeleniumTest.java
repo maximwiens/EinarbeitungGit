@@ -9,16 +9,11 @@ import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import com.thoughtworks.selenium.SeleneseTestBase;
 
-
-
-
-public class SeleniumTest extends SeleneseTestBase {
+public class SeleniumTest {
   private HtmlUnitDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
